@@ -3,15 +3,15 @@ body {
 }
 #parent-div {
   display: flex;
+  margin: auto;
   width: 100%;
   height: 100vh;
+  /* background-color: aqua; */
 }
-
 #sidebar {
   width: 15%;
-
   color: rgba(247, 242, 242, 0.822);
-  border: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid grey;
   text-align: left;
   padding: 0 25px;
   box-sizing: border-box;
@@ -32,7 +32,7 @@ body {
   font-size: 32px;
   margin: 0 10px;
 }
-#sidebar button {
+.tweet-btn {
   color: white;
   background-color: rgb(35, 128, 165);
   padding: 10px 40px;
@@ -42,4 +42,101 @@ body {
 #footer {
   position: absolute;
   bottom: 10px;
+}
+/* ------------main---------- */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  border-right: 1px solid grey;
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+
+  /* padding: 0 5px; */
+}
+.feed {
+  /* margin: 0 15px; */
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+#topbar {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid grey;
+}
+#topbar-heading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.feed-div {
+  display: flex;
+  flex-direction: row;
+}
+.feed-div textarea {
+  border: none;
+  width: 100%;
+  height: 50px;
+  background: none;
+  /* color: rgb(204, 201, 201); */
+  text-align: left;
+  font-size: 10px;
+  resize: none;
+}
+.feed-profile {
+  margin: 0 10px;
+}
+.feed-profile img,
+#footer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  /* margin-left: 5px; */
+}
+.topbar-tweet-fa {
+  display: flex;
+  margin-left: 50px;
+  justify-content: space-between;
+}
+#upload-bar i {
+  margin: 5px 8px;
+  color: rgb(35, 128, 165);
+}
+
+.feed-content h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.feed-content p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.feed-content img {
+  width: 98%;
+  height: 200px;
+  border-radius: 20px;
+}
+.tweet-id {
+  color: gray;
+  opacity: 0.8;
+  font-size: 18px;
+}
+.retweet-bar {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(23, 89, 212);
+  font-weight: 100;
 }
